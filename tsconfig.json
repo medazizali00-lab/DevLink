@@ -18,9 +18,11 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+   "paths": {
+  "@/*": ["./src/*"],        // Alias pour les fichiers dans src/
+  "#/components/*": ["./components/*"], // Alias pour les composants shadcn (à la racine)
+  "#/lib/*": ["./lib/*"]        // Alias pour les libs shadcn (à la racine)
+}
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
